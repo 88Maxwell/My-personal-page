@@ -67,7 +67,7 @@ p {
   justify-content: center;
   align-items: center; }
 
-li {
+.link > li {
   display: inline-block; }
 
 section {
