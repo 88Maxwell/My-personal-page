@@ -1,0 +1,19 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    @include desktop{height: 100%;}
+    margin-bottom: 15px;
+    
+    &--bg{
+        background-color: rgba($color: #bbb, $alpha: 0.6);
+        border: {
+            color: rgba($color: #bbb, $alpha: 0.6);
+            style: solid;
+            width: 2px;
+            radius: 30px;
+        }
+    }
+}
