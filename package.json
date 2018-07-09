@@ -1,11 +1,10 @@
 {
-  "name": "GraphBuilder",
-  "version": "1.0.0",
-  "main": "server/server.js",
+  "name": "My personal page",
+  "version": "2.0.0",
+  "main": "/src/js/index.js",
   "author": "88Maxwell",
-  "license": "MIT",
   "repository": "https://github.com/88Maxwell/My-personal-page",
-  "homepage": "https://88Maxwell.github.com/",
+  "homepage": "https://88Maxwell.github.com",
   "scripts": {
     "build": "NODE_ENV=production webpack --p --config webpack/prod.config.js",
     "dev": "NODE_ENV=development webpack-dev-server --d --config webpack/dev.config.js",
