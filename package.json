@@ -4,6 +4,7 @@
   "main": "server/server.js",
   "author": "88Maxwell",
   "license": "MIT",
+  "repository": "https://github.com/88Maxwell/My-personal-page",
   "homepage": "https://88Maxwell.github.com/",
   "scripts": {
     "build": "NODE_ENV=production webpack --p --config webpack/prod.config.js",
