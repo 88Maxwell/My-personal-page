@@ -1,7 +1,7 @@
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
     padding: 10px;
     @include desktop{height: 100%;}

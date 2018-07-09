@@ -1,40 +1,34 @@
 .inf {
-    @include desktop(){
-        display: flex;
-        justify-content: space-between;
-        margin: 45px auto;
-        width: 100%;
-        font-size: 0.8rem;
-        &--smaller{
-            width: 75%;
-        }
-        &__right, &__left {
-            width: 30%;
-        }
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0.7rem;
 
+    &--smaller{
+        width: 85%;
     }
 
-    @include mobile(){
-
-        &__right {
-            margin: 0 45px 45px 0;
-        }
-        &__left {
-            margin: 0 0 45px 45px;
-        }
-
+    @include mobile{
+        display: none;
     }
 
     &__right, &__left{
+        width: 30%;
         position: relative;
         animation-delay: 0.25s;
         animation-duration: 2s;
         animation-timing-function: ease-out;
     }
 
-    &__right {animation-name: right;}
+    &__right {
+        text-align: left;
+        animation-name: right;
+    }
 
-    &__left {animation-name: left;}
+    &__left {
+        text-align: right;
+        animation-name: left;}
     
 
 }

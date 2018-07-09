@@ -1,0 +1,19 @@
+.record {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &__label {
+        color: $sec-font;
+    }
+
+    &__link{
+        display: inline-block;
+        width: 100%;
+        // text-align: center;
+        text-decoration: none;
+        color: $link;
+        &:hover{
+            color: $link-hover;
+        }
+    }
+}
