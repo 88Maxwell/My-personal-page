@@ -21,6 +21,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
         @include isGridSupported {
             grid-template-columns: 1fr;
         }

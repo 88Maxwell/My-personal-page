@@ -1,8 +1,8 @@
 .record {
     display: flex;
     justify-content: center;
+
     @include isGridSupported {
-        display: grid;
         grid-template-columns: auto auto;
     }
 

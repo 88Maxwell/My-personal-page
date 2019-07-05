@@ -10,9 +10,11 @@
     }
 }
 
-@mixin isGridSupported {
+@mixin isGridSupported($grid:true) {
     @supports (display: grid) {
-        display: grid;
+        @if $grid == true {
+            display: grid;            
+        }
         @content;
     }
 }

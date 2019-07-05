@@ -9,8 +9,9 @@
         margin: 0 auto;
         width: 100%;
         font-size: 0.7rem;
+        
         @include isGridSupported {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             align-self: center;
         }
 
@@ -21,27 +22,24 @@
         &__right,
         &__left {
             width: 30%;
-            @include isGridSupported {
-                width: 45%;
-            }
             position: relative;
             animation-delay: 0.25s;
             animation-duration: 2s;
             animation-timing-function: ease-out;
+
+            @include isGridSupported($grid: false) {
+                width: 60%;
+            }
         }
 
         &__right {
-            @include isGridSupported {
-                justify-self: end;
-            }
+            justify-self: end;
             text-align: right;
             animation-name: fromRightToLeft;
         }
 
         &__left {
-            @include isGridSupported {
-                justify-self: start;
-            }
+            justify-self: start;
             text-align: left;
             animation-name: fromLeftToRight;
         }

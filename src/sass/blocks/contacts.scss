@@ -2,6 +2,7 @@
     &__social {
         display: flex;
         justify-content: space-between;
+        
         @include isGridSupported {
             grid-template-columns: repeat(3, auto);
         }
