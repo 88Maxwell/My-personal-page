@@ -1,44 +1,49 @@
 .inf {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 100%;
-    font-size: 0.7rem;
-
-    &--smaller{
-        width: 85%;
-    }
-
-    @include mobile{
+    @include mobile {
         display: none;
     }
 
-    &__right, &__left{
-        width: 30%;
-        position: relative;
-        animation-delay: 0.25s;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 0.7rem;
+        @include isGridSupported {
+            grid-template-columns: 1fr 1fr;
+            align-self: center;
+        }
+
+        &--smaller {
+            width: 85%;
+        }
+
+        &__right,
+        &__left {
+            width: 30%;
+            @include isGridSupported {
+                width: 45%;
+            }
+            position: relative;
+            animation-delay: 0.25s;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+        }
+
+        &__right {
+            @include isGridSupported {
+                justify-self: end;
+            }
+            text-align: right;
+            animation-name: fromRightToLeft;
+        }
+
+        &__left {
+            @include isGridSupported {
+                justify-self: start;
+            }
+            text-align: left;
+            animation-name: fromLeftToRight;
+        }
     }
-
-    &__right {
-        text-align: left;
-        animation-name: right;
-    }
-
-    &__left {
-        text-align: right;
-        animation-name: left;}
-    
-
-}
-
-@keyframes right {
-    from {opacity: 0; left: -33vw;}
-    to {opacity: 1; left: 0;}
-}
-
-@keyframes left {
-    from {opacity: 0; right: -33vw;}
-    to {opacity: 1; right: 0;}
 }

@@ -2,11 +2,12 @@
     &__social {
         display: flex;
         justify-content: space-between;
+        @include isGridSupported {
+            grid-template-columns: repeat(3, auto);
+        }
     }
 
     &__official {
-        display: flex;
-        flex-direction: column;
         margin: 15px 0;
         font-size: 0.9rem;
     }
