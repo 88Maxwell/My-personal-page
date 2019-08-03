@@ -8,11 +8,13 @@
     "scripts": {
         "build": "parcel build src/index.html -d build --public-url ./",
         "dev": "parcel --port 8000 src/index.html -d __build",
+        "serve": "serve -s build",
         "deploy": "gh-pages -d build"
     },
     "devDependencies": {
         "gh-pages": "^2.0.1",
         "node-sass": "^4.12.0",
-        "parcel-bundler": "^1.12.3"
+        "parcel-bundler": "^1.12.3",
+        "serve": "^11.1.0"
     }
 }

@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Soltyk Maksym Yuriyovych</title>
+
+        <link rel="manifest" href="manifest.webmanifest" />
         <link rel="shortcut icon" href="img/resume.png" />
         <link rel="stylesheet" href="sass/index.scss" />
     </head>
@@ -91,6 +93,12 @@
                     </div>
                 </div>
             </main>
+            <script>
+                window.addEventListener("beforeinstallprompt", e => {
+                    console.log(e);
+                    console.log("beforeinstallprompt")
+                });
+            </script>
         </div>
     </body>
 </html>
