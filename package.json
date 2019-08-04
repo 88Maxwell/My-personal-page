@@ -6,7 +6,7 @@
     "repository": "https://github.com/88Maxwell/My-personal-page",
     "homepage": "https://88Maxwell.github.com",
     "scripts": {
-        "build": "parcel build src/index.html -d build --public-url ./",
+        "build": "rm -rf build && parcel build src/index.html -d build --public-url ./",
         "dev": "parcel --port 8000 src/index.html -d __build",
         "serve": "serve -s build",
         "deploy": "gh-pages -d build"
