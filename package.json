@@ -3,6 +3,7 @@
     "version": "3.1.0",
     "main": "/src/js/index.js",
     "author": "88Maxwell",
+    "license": "",
     "repository": "https://github.com/88Maxwell/My-personal-page",
     "homepage": "https://88Maxwell.github.com",
     "scripts": {
@@ -11,6 +12,9 @@
         "serve": "serve -s build",
         "deploy": "gh-pages -d build"
     },
+    "browserslist": [
+        "since 2017-06"
+    ],
     "devDependencies": {
         "gh-pages": "^2.0.1",
         "node-sass": "^4.12.0",
