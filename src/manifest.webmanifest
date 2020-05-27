@@ -1,7 +1,7 @@
 {
     "short_name": "Maksym Soltyk page",
     "name": "Maksym Soltyk page",
-    "start_url": "/My-personal-page/index.html",
+    "start_url": "/index.html",
     "icons": [
         {
             "src": "img/cv512.png",
