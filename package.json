@@ -1,16 +1,16 @@
 {
-    "name": "my-personal-page",
-    "version": "3.1.0",
+    "name": "88maxwell",
+    "version": "3.1.1",
     "main": "/src/js/index.js",
     "author": "88Maxwell",
     "license": "",
-    "repository": "https://github.com/88Maxwell/88maxwell.github.io",
+    "repository": "https://github.com/88Maxwell/88Maxwell.github.io",
     "homepage": "https://88Maxwell.github.com",
     "scripts": {
         "build": "rm -rf build && parcel build src/index.html -d build --public-url ./",
         "dev": "parcel --port 8000 src/index.html -d __build",
         "serve": "serve -s build",
-        "deploy": "gh-pages -d build"
+        "deploy": "NODE_DEBUG=gh-pages gh-pages -d build"
     },
     "browserslist": [
         "since 2017-06"
