@@ -2,7 +2,7 @@ resume.code-workspace
 node_modules/
 .vscode/
 .babelrc
-build/
+# build/
 __build/
 yarn-error.log
 package-lock.json
