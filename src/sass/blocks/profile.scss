@@ -10,12 +10,13 @@
         position: relative;
     }
 
-
     &__heading {
         text-align: center;
+        font-size: 2rem;
     }
 
     &__photo {
+        position: relative;
         max-width: 50%;
         width: 100%;
         margin: 0 auto;
@@ -27,8 +28,29 @@
 
         &:before {
             content: "";
+            position: absolute;
+            z-index: -1;
+            left: -5px;
+            bottom: -5px;
+            right: -5px;
+            top: -5px;
+            border-radius: 50%;
+            background-color: rgba($color: $secondary, $alpha: 0.1);
+            background-repeat: no-repeat;
+            background-image: -webkit-linear-gradient(
+                rgba($color: $secondary, $alpha: 0.25),
+                rgba($color: $primary, $alpha: 0.3),
+                rgba($color: $primary, $alpha: 0.55),
+                rgba($color: $primary, $alpha: 0.3),
+                rgba($color: $secondary, $alpha: 0.25)
+            );
+            animation: rotate 8s linear infinite;
+        }
+        &:after {
+            content: "";
             display: block;
-            padding-top: 100%;
+            padding-bottom: 100%;
+            border-radius: 50%;
         }
     }
 }

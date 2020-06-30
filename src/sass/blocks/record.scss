@@ -1,18 +1,17 @@
 .record {
     display: flex;
     justify-content: center;
+    font-size: 1rem;
 
     @include isGridSupported {
         grid-template-columns: auto auto;
     }
 
     &__label {
-        color: $sec-font;
         padding-right: 5px;
     }
 
     &__link {
-        text-decoration: none;
         color: $link;
         &:hover {
             color: $link-hover;
