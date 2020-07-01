@@ -1,22 +1,10 @@
-@keyframes fromLeftToRight {
-    from {
+@keyframes appearing {
+    0% {
         opacity: 0;
-        left: -33vw;
     }
-    to {
+    100% {
+        visibility: visible;
         opacity: 1;
-        left: 0;
-    }
-}
-
-@keyframes fromRightToLeft {
-    from {
-        opacity: 0;
-        right: -33vw;
-    }
-    to {
-        opacity: 1;
-        right: 0;
     }
 }
 
